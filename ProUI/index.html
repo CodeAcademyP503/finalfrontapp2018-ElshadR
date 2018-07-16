@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="js/bootstrap-4.1.1/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <title>Document</title>
+
+    <!-- plugin qrafik start -->
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+        ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "ee6b7db5b51705a13dc2339db3edaf6d"];</script>
+    <!-- plugin qrafik end -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <script src="js/color.js"></script>
+    <div id="sidebar">
+        <div class="logo">
+            <img src="images/index/indexSidebar01.png" alt="">
+            <span>ProUI</span>
+        </div>
+        <div class="user">
+            <div class="userPhoto">
+                <img src="images/index/indexSidebar02.jpg" alt="">
+            </div>
+            <div class="userName">
+                <span>John Doe</span>
+                <br>
+                <i class="fas fa-user"></i>
+                <i class="fas fa-envelope"></i>
+                <i class="fas fa-cog"></i>
+                <i class="fas fa-sign-out-alt"></i>
+            </div>
+        </div>
+        <div class="colorSidebar">
+            <div class="colorItem" id="01"></div>
+            <div class="colorItem" id="02"></div>
+            <div class="colorItem" id="03"></div>
+            <div class="colorItem" id="04"></div>
+            <div class="colorItem" id="05"></div>
+            <div class="colorItem" id="06"></div>
+            <div class="colorItem" id="07"></div>
+            <div class="colorItem" id="08"></div>
+            <div class="colorItem" id="09"></div>
+            <div class="colorItem" id="10"></div>
+            <div class="colorItem" id="11"></div>
+            <div class="colorItem" id="12"></div>
+            <div class="colorItem" id="13"></div>
+            <div class="colorItem" id="14"></div>
+        </div>
+        <div class="proUIitem">
+            <ul>
+                <li class="dashboard">
+                    <i class="fas fa-stopwatch"></i>
+                    Dashboard
+                </li>
+                <li class="dashboard2">
+                    <i class="fas fa-leaf"></i>
+                    Dashboard 2
+                </li>
+                <li class="emailTemplates">
+                    <i class="far fa-envelope"></i>
+                    Email Templates
+                </li>
+                <li class="itemHead">
+                    <i class="fas fa-shopping-cart"></i>
+                    eCommerce
+                    <i class="fas fa-chevron-left left"></i>
+                </li>
+                <ul class="itemMain">
+                    <li class="dashboardE">Dashboard</li>
+                    <li class="ordersE">Orders</li>
+                    <li class="orderViewE">Order View</li>
+                    <li class="productsE">Products</li>
+                    <li class="productEditE">Product Edit</li>
+                    <li class="customerViewE">Customer View</li>
+                </ul>
+            </ul>
+
+        </div>
+        <div class="header">
+            <span>WIDGET KIT</span>
+            <div class="widgetItem">
+                <i class="far fa-lightbulb"></i>
+                <i class="fas fa-wrench"></i>
+            </div>
+        </div>
+        <div class="widgetItem">
+            <ul>
+                <li class="statistick">
+                    <i class="fas fa-chart-bar"></i>
+                    Statistick
+                </li>
+                <li class="social">
+                    <i class="fas fa-share-alt"></i>
+                    Social
+                </li>
+                <li class="media">
+                    <i class="fas fa-film"></i>
+                    Media
+                </li>
+                <li class="links">
+                    <i class="fas fa-link"></i>
+                    Links
+                </li>
+            </ul>
+        </div>
+        <div class="header">
+            <span>DESIGN KIT</span>
+            <div class="widgetItem">
+                <i class="fas fa-wrench"></i>
+            </div>
+        </div>
+        <div class="designItem">
+            <ul>
+                <li class="itemHead">
+                    <i class="fas fa-certificate"></i>
+                    User Interface
+                    <i class="fas fa-chevron-left left"></i>
+                </li>
+                <ul class="itemMain">
+                    <li class="gridBlocks">Grid & Blocks</li>
+                    <li class="drggableBlocks">Draggable Blocks</li>
+                    <li class="typography">Typography</li>
+                    <li class="buttonsDropdowns">Buttons & Dropdowns</li>
+                    <li class="navigationMore">Navigation & More</li>
+                    <li class="horizontalMenu">Horizontal Menu</li>
+                    <li class="progressLoading">Progress & Loading</li>
+                    <li class="pagePreloader">Page Preloader</li>
+                    <li class="colorThemes">Color Themes</li>
+                </ul>
+                <li class="itemHead">
+                    <i class="fas fa-notes-medical"></i>
+                    Forms
+                    <i class="fas fa-chevron-left left"></i>
+                </li>
+                <ul class="itemMain">
+                    <li class="generalF">General</li>
+                    <li class="components">Components</li>
+                    <li class="validation">Validation</li>
+                    <li class="wizard">Wizard</li>
+                </ul>
+                <li class="itemHead">
+                    <i class="fas fa-table"></i>
+                    Tables
+                    <i class="fas fa-chevron-left left"></i>
+                </li>
+                <ul class="itemMain">
+                    <li class="generalT">General</li>
+                    <li class="responsive">Responsive</li>
+                    <li class="datatables">Datatables</li>
+                </ul>
+                <li class="itemHead">
+                    <i class="fas fa-trophy"></i>
+                    Icon Sets
+                    <i class="fas fa-chevron-left left"></i>
+                </li>
+                <ul class="itemMain">
+                    <li class="fontAwesome">Font Awesome</li>
+                    <li class="glyphiconsPro">Glyphicons Pro</li>
+                </ul>
+                <li class="itemHead">
+                    <i class="fas fa-th-large"></i>
+                    Page Layouts
+                    <i class="fas fa-chevron-left left"></i>
+                </li>
+                <ul class="itemMain">
+                    <li class="static">Static</li>
+                    <li class="staticFixedFooter">Static + Fixed Footer</li>
+                    <li class="fixedTopHeader">Fixed Top Header</li>
+                    <li class="fixedTopHeaderFooter">Fixed Top Header + Footer</li>
+                    <li class="fixedBottomHeader">Fixed Bottom Header</li>
+                    <li class="fixedBottomHeaderFooter">Fixed Bottom Header + Footer</li>
+                    <li class="minimainSidebar">Mini Main Sidebar</li>
+                    <li class="partialMainSidebar">Partial Main Sidebar</li>
+                    <li class="visibleMainSidebar">Visible Main Sidebar</li>
+                    <li class="partialAlternativeSidebar">Partial Alternative Sidebar</li>
+                    <li class="visibleAlternativeSidebar">Visible Alternative Sidebar</li>
+                    <li class="noSidebars">No Sidebars</li>
+                    <li class="bothSidebarsPartial">Both Sidebars Partial</li>
+                    <li class="animatedSidebarTrasitions">Animated Sidebar Transitions</li>
+                </ul>
+            </ul>
+        </div>
+        <div class="header">
+            <span>DEVELOP KIT</span>
+            <div class="widgetItem">
+                <i class="fas fa-wrench"></i>
+            </div>
+        </div>
+        <div class="developItem">
+            <ul>
+                <li class="itemHead">
+                    <i class="fas fa-paint-brush"></i>
+                    Ready Pages
+                    <i class="fas fa-chevron-left left"></i>
+                </li>
+                <ul class="itemMain">
+                    <li class="itemDevelopHead">
+                        <i style="position:absolute"></i>
+                        Error
+                        <i class="fas fa-chevron-left left"></i>
+                    </li>
+                    <ul class="itemDevelopMain">
+                        <li class="400">400</li>
+                        <li class="401">401</li>
+                        <li class="403">403</li>
+                        <li class="404">404</li>
+                        <li class="500">500</li>
+                        <li class="503">503</li>
+                    </ul>
+                    <li class="itemDevelopHead">
+                        <i style="position:absolute"></i>
+                        Get Started
+                        <i class="fas fa-chevron-left left"></i>
+                    </li>
+                    <ul class="itemDevelopMain">
+                        <li class="blank">Blank</li>
+                        <li class="blankAlternative">Blank Alternative</li>
+                    </ul>
+                    <li class="searchResult">Search Results (4)</li>
+                    <li class="article">Article</li>
+                    <li class="userProfile">User Profile</li>
+                    <li class="contacts">Contacts</li>
+                    <li class="itemDevelopHead">
+                        <i style="position:absolute"></i>
+                        e-Learning
+                        <i class="fas fa-chevron-left left"></i>
+                    </li>
+                    <ul class="itemDevelopMain">
+                        <li class="courses">Courses</li>
+                        <li class="courseLessons">Course - Lessons</li>
+                        <li class="courseLessonPage">Course - Lesson Page</li>
+                    </ul>
+                    <li class="itemDevelopHead">
+                        <i style="position:absolute"></i>
+                        Message Center
+                        <i class="fas fa-chevron-left left"></i>
+                    </li>
+                    <ul class="itemDevelopMain">
+                        <li class="inbox">Inbox</li>
+                        <li class="composeMessage">Compose Message</li>
+                        <li class="viewMessage">View Message</li>
+                    </ul>
+                    <li class="chat">Chat</li>
+                    <li class="timeline">Timeline</li>
+                    <li class="files">Files</li>
+                    <li class="tickets">Tickets</li>
+                    <li class="bugTracker">Bug Tracker</li>
+                    <li class="tasks">Tasks</li>
+                    <li class="faq">FAQ</li>
+                    <li class="pricingTables">Pricing Tables</li>
+                    <li class="invoice">Invoice</li>
+                    <li class="forum">Forum (3)</li>
+                    <li class="comingSoon">Coming Soon</li>
+                    <li class="itemDevelopHead">
+                        <i style="position:absolute"></i>
+                        Login, Register & Lock
+                        <i class="fas fa-chevron-left left"></i>
+                    </li>
+                    <ul class="itemDevelopMain">
+                        <li class="login">Login</li>
+                        <li class="loginFullBackground)">Login (Full Background)</li>
+                        <li class="login2">Login 2</li>
+                        <li class="passwordReminder">Password Reminder</li>
+                        <li class="passwordReminder2">Password Reminder 2</li>
+                        <li class="register">Register</li>
+                        <li class="register2">Register 2</li>
+                        <li class="lockScreen">Lock Screen</li>
+                        <li class="lockScreen2">Lock Screen 2</li>
+                    </ul>
+                </ul>
+                <li class="itemHead">
+                    <i class="fas fa-wrench"></i>
+                    Components
+                    <i class="fas fa-chevron-left left"></i>
+                </li>
+                <ul class="itemMain">
+                    <li class="itemDevelopHead">
+                        <i style="position:absolute"></i>
+                        3 Level Menu
+                        <i class="fas fa-chevron-left left"></i>
+                    </li>
+                    <ul class="itemDevelopMain">
+                        <li class="link1">Link 1</li>
+                        <li class="link2">Link 2</li>
+                    </ul>
+                    <li class="maps">Maps</li>
+                    <li class="charts">Charts</li>
+                    <li class="gallery">Gallery</li>
+                    <li class="carouselE">Carousel</li>
+                    <li class="calendar">Calendar</li>
+                    <li class="css3Animations">CSS3 Animations</li>
+                    <li class="syntaxHighlighting">Syntax Highlighting</li>
+                </ul>
+            </ul>
+        </div>
+        <div class="header">
+            <span>ACTIVITY</span>
+            <div class="widgetItem">
+                <i class="fas fa-sync-alt"></i>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <header class="nav">
+            <div class="navLeft">
+                <div class="showHideSidebar">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="setting">
+                    <i class="fas fa-wrench"></i>
+                    <div class="settingItem">
+                        <ul>
+                            <li>Header Style</li>
+                            <li>
+                                <button>Light</button>
+                                <button>Dark</button>
+                            </li>
+                            <li>Page Style</li>
+                            <li>
+                                <button>Default</button>
+                                <button>Alternative</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="navInput">
+                <form action="#">
+                    <input type="text" placeholder="Search..">
+                </form>
+            </div>
+            <div class="navRight">
+                <div class="showHideChatUI">
+                    <i class="fas fa-share-alt"></i>
+                    <div class="shareSpan">
+                        <span>4</span>
+                    </div>
+                </div>
+                <div class="userAcount">
+                    <div class="user">
+                        <img src="images/index/indexSidebar02.jpg" alt="">
+                    </div>
+                    <i class="fas fa-chevron-down"></i>
+                    <div class="userItem">
+                        <div class="account">
+                            <p id="cekk">Account</p>
+                            <ul>
+                                <li>
+                                    <a href="#" id="b">
+                                        Updates
+                                        <i class="far fa-clock"></i>
+                                        <span>10</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Messages
+                                        <i class="far fa-envelope"></i>
+                                        <span>5</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Subscriptions
+                                        <i class="fas fa-magnet"></i>
+                                        <span>3</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        FAQ
+                                        <i class="fas fa-question"></i>
+                                        <span>11</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        Profile
+                                        <i class="fas fa-user"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Settings
+                                        <i class="fas fa-cog"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        Lock Account
+                                        <i class="fas fa-lock"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Logout
+                                        <i class="fas fa-ban"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="activity">
+                            <p>Activity</p>
+                            <ul>
+                                <li>
+                                    <span>5 min ago</span>
+                                    <br>
+                                    <span>
+                                        <i class="fas fa-thumbs-up"></i>
+                                        You had a new sale ($10)
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>10 min ago</span>
+                                    <br>
+                                    <span>
+                                        <i class="fas fa-arrow-up"></i>
+                                        Upgraded to Pro plan
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>3 hours ago</span>
+                                    <br>
+                                    <span>
+                                        <i class="fas fa-exclamation"></i>
+                                        Running low on space
+                                    </span>
+                                    <br>
+                                    <span>18GB in use 2GB left</span>
+                                </li>
+                                <li>
+                                    <span>Yesterday</span>
+                                    <br>
+                                    <a href="#">
+                                        <i class="fas fa-bug"></i>
+                                        New bug submitted
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="setProfil">
+                            <a href="#"></a>
+                            <a href="#"></a>
+                        </div>
+                        <div class="setProfil">
+                            <a href="#"></a>
+                            <a href="#"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="welcomAdmin">
+            <div class="text">
+                <div class="row">
+                    <div class="col-lg-4 col-xl-6 hidden-md hidden-xs hidden-sm wAdmin">
+                        <span>Welcome</span>
+                        <strong>Admin</strong>
+                        <br>
+                        <span>You Look Awesome!</span>
+                    </div>
+                    <div class="col-lg-8 col-xl-6 col-sm-12 items">
+                        <div class="row text-center">
+                            <div class="col-sm-4 col-md-3 col-4 item">
+                                <strong>$93.7k</strong>
+                                <br>
+                                <span>
+                                    <i class="far fa-thumbs-up"></i>
+                                    Great
+                                </span>
+                            </div>
+                            <div class="col-sm-4 col-md-3 col-4 item">
+                                <strong>167k</strong>
+                                <br>
+                                <span>
+                                    <i class="far fa-heart "></i>
+                                    Likes
+                                </span>
+                            </div>
+                            <div class="col-sm-4 col-md-3 col-4 item">
+                                <strong>101</strong>
+                                <br>
+                                <span>
+                                    <i class="far fa-calendar"></i>
+                                    Events
+                                </span>
+                            </div>
+                            <div class="col-md-3 hidden-xl item">
+                                <strong>27° C</strong>
+                                <br>
+                                <span>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Sydney
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="images/index/indexMain01.jpg" alt="">
+        </div>
+        <div class="mainArticle">
+            <div class="row">
+                <div class="col-md-6 col-xl-3 col-sm-12 item">
+                    <div>
+                        <div>
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div>
+                            <span>New
+                                <strong>Article</strong>
+                            </span>
+                            <br>
+                            <span>Mountain Trip</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-xl-3 col-sm-12 item">
+                    <div>
+                        <div>
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div>
+                            <span>+
+                                <strong>250%</strong>
+                            </span>
+                            <br>
+                            <span>Sales Today</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3 col-sm-12 item">
+                    <div>
+                        <div>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <span>5
+                                <strong>Messages</strong>
+                            </span>
+                            <br>
+                            <span>support Center</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3 col-sm-12 item">
+                    <div>
+                        <div>
+                            <i class="far fa-image"></i>
+                        </div>
+                        <div>
+                            <span>+30
+                                <strong>Photos</strong>
+                            </span>
+                            <br>
+                            <span>Gallery</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 item">
+                    <div>
+                        <div>
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <div class="hide">
+                            <span>Latest
+                                <strong>Sales</strong>
+                            </span>
+                            <br>
+                            <span>Per Hour</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-sm-12 item">
+                    <div>
+                        <div>
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <div class="hide">
+                            <span>Latest
+                                <strong>Sales</strong>
+                            </span>
+                            <br>
+                            <span>Per Hour</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="newsPlan">
+            <div class="row">
+                <div class="col-md-12 col-lg-6 news">
+                    <div class="hor"></div>
+                    <div class="header">
+                        <div>
+                            <span>Latest</span>
+                            <strong>News</strong>
+                            <a href="#">Wiev all</a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <i class="fas fa-pencil-alt"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fas fa-cog"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carter">
+                        <div class="left">
+                            <span>just now</span>
+                            <div>
+                                <i class="fas fa-plane"></i>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="head">
+                                <a href="#">Jordan Corter</a>
+                            </div>
+                            <div class="content">
+                                <p>The trip was an amazing and a life changing experience!!</p>
+                                <div class="art">
+                                    <a href="#">
+                                        <i class="fas fa-file"></i>
+                                        Read the article
+                                    </a>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img id="myImg" src="images/index/indexMain02.jpg"  style="width:100%;max-width:300px">
+                                        <!-- The Modal -->
+                                        <div id="myModal" class="modal">
+                                          <span class="close">&times;</span>
+                                          <img class="modal-content" id="img01">
+                                          <div id="caption"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <img id="myImg" src="images/index/indexMain03.jpg"  style="width:100%;max-width:300px">
+                                        <!-- The Modal -->
+                                        <div id="myModal" class="modal">
+                                          <span class="close">&times;</span>
+                                          <img class="modal-content" id="img01">
+                                          <div id="caption"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="administrator">
+                        <div class="left">
+                            <span>5 mmin ego</span>
+                            <div>
+                                <i class="fas fa-file"></i>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="head">
+                                <a href="#">Administrator</a>
+                            </div>
+                            <div class="content">
+                                <p>Free courses for all our customers at A1 Conference Room - 9:00 am tomorrow!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="winter">
+                        <div class="left">
+                            <span>3 hours ego</span>
+                            <div>
+                                <i class="fas fa-cocktail"></i>
+                            </div>
+
+                        </div>
+                        <div class="right">
+                            <div class="head">
+                                <a href="#">Ella Winter</a>
+                            </div>
+                            <div class="content">
+                                <p>Happy Hour! Free drinks at
+                                    <a href="#">Cafe-Bar</a> all day long!</p>
+                                <div>
+                                    <div id="map"></div>
+                                    <script>
+                                        function initMap() {
+                                            var map = new google.maps.Map(document.getElementById('map'), {
+                                                zoom: 10,
+                                                center: { lat: -25, lng: 151 },
+                                                disableDefaultUI: true
+                                            });
+                                        }
+                                    </script>
+                                    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="woods">
+                        <div class="left">
+                            <span>yesterday</span>
+                            <div>
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="head">
+                                <a href="#">Patricia Woods</a>
+                            </div>
+                            <div class="content">
+                                <p>Today I had the lunch of my life! It was delicious!</p>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <a href="images/index/indexMain02.jpg" data-toggle="lightbox-image">
+                                            <img src="images/index/indexMain02.jpg" alt="image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="administrator2">
+                        <div class="left">
+                            <span>2 days ago</span>
+                            <div>
+                                <i class="fas fa-smile"></i>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="head">
+                                <a href="#">Administrator</a>
+                            </div>
+                            <div class="content">
+                                <p>To thank you all for your support we would like to let you know that you will receive free
+                                    feature updates for life! You are awesome!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ward">
+                        <div class="left">
+                            <span>1 week ago</span>
+                            <div>
+                                <i class="fas fa-pencil-alt"></i>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="head">
+                                <a href="#">Nicole Ward</a>
+                            </div>
+                            <div class="content">
+                                <p>Consectetur adipiscing elit. Maecenas ultrices, justo vel imperdiet gravida, urna ligula
+                                    hendrerit nibh, ac cursus nibh sapien in purus. Mauris tincidunt tincidunt turpis in
+                                    porta. Integer fermentum tincidunt auctor. Vestibulum ullamcorper, odio sed rhoncus imperdiet,
+                                    enim elit sollicitudin orci, eget dictum leo mi nec lectus. Nam commodo turpis id lectus
+                                    scelerisque vulputate. Integer sed dolor erat. Fusce erat ipsum, varius vel euismod sed,
+                                    tristique et lectus? Etiam egestas fringilla enim, id convallis lectus laoreet at. Fusce
+                                    purus nisi, gravida sed consectetur ut, interdum quis nisi. Quisque egestas nisl id lectus
+                                    facilisis scelerisque? Proin rhoncus dui at ligula vestibulum ut facilisis ante sodales!
+                                    Suspendisse potenti. Aliquam tincidunt sollicitudin sem nec ultrices. Sed at mi velit.
+                                    Ut egestas tempor est, in cursus enim venenatis eget! Nulla quis ligula ipsum.</p>
+                                <div>
+                                    <a href="#">View more..</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6 plan">
+                    <div class="header">
+                        <div>
+                            <span>Your</span>
+                            <strong>Vip Plan</strong>
+                            <a href="#">Upgrade</a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <i class="fas fa-pencil-alt"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fas fa-cog"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row PSCE">
+                        <div class="col-sm-6 col-xl-3">
+                            <strong>35</strong>
+                            <span>/50</span>
+                            <div>
+                                <i class="far fa-folder-open"></i>
+                                <span>Projects</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-3">
+                            <strong>25</strong>
+                            <span>/100gb</span>
+                            <div>
+                                <i class="far fa-hdd"></i>
+                                <span>Storage</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-3">
+                            <strong>65</strong>
+                            <span>/1k</span>
+                            <div>
+                                <i class="far fa-building"></i>
+                                <span>Clients</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-3">
+                            <strong>10</strong>
+                            <span>k</span>
+                            <div>
+                                <i class="far fa-envelope"></i>
+                                <span>Emails</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row qraf">
+                        <div class="textQraf">
+                            <div>
+                                <strong>Sales</strong>
+                                <span>&</span>
+                                <strong>Earnings</strong>
+                            </div>
+                            <span>Last Year</span>
+                        </div>
+                        <div id="myChart"></div>
+
+                    </div>
+                    <div class="row altQraf">
+                        <div class="col-sm-6 col-xl-3">
+                            <strong>7.500</strong>
+                            <br>
+                            <span>Clients</span>
+                        </div>
+                        <div class="col-sm-6 col-xl-3">
+                            <strong>10.970</strong>
+                            <br>
+                            <span>Sales</span>
+                        </div>
+                        <div class="col-sm-6 col-xl-3">
+                            <strong>$31.230</strong>
+                            <br>
+                            <span>Earnings</span>
+                        </div>
+
+                    </div>
+                    <div class="row weather">
+                        <div class="text">
+                            <div class="left">
+                                <span>Weather
+                                    <strong>Station</strong>
+                                </span>
+                                <br>
+                                <span>
+                                    <i class="fas fa-location-arrow"></i>The Mountain</span>
+                            </div>
+                            <div class="right">
+                                <i class="fas fa-sun"></i>
+                            </div>
+                        </div>
+                        <div class="photo">
+                            <img src="images/index/indexMain05.jpg" alt="">
+                        </div>
+
+                    </div>
+                    <div class="row altPhoto">
+                        <div class="col-sm-6 col-xl-3">
+                            <span>
+                                <strong>10°</strong>C</span>
+                            <br>
+                            <span>Sunny</span>
+                        </div>
+                        <div class="col-sm-6 col-xl-3">
+                            <span>
+                                <strong>80</strong>%</span>
+                            <br>
+                            <span>Humidity</span>
+                        </div>
+                        <div class="col-sm-6 col-xl-3">
+                            <span>
+                                <strong>60</strong>km/h</span>
+                            <br>
+                            <span>Wind</span>
+                        </div>
+                        <div class="col-sm-6 col-xl-3">
+                            <span>
+                                <strong>5</strong>km</span>
+                            <br>
+                            <span>Visibility</span>
+                        </div>
+                    </div>
+                    <div class="row qallery">
+                        <div>
+                            <span>Awesome
+                                <strong>Gallery</strong>
+                            </span>
+                            <br>
+                            <span>4 Photos</span>
+                        </div>
+                        <div>
+                            <i class="far fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="row altQallery">
+                        <div class="col-sm-6 col-lg-3">
+                            <a href="">
+                                <img src="images/index/indexMain06.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <a href="">
+                                <img src="images/index/indexMain07.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <a href="">
+                                <img src="images/index/indexMain08.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <a href="">
+                                <img src="images/index/indexMain09.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="chatUI">
+        <div class="head">
+            <strong>Chat</strong>UI
+            <i class="fas fa-comment-alt"></i>
+        </div>
+        <div class="users">
+
+            <div class="userShow">
+                <div class="item">
+                    <div class="userS">
+                        <img src="images/index/indexChatUI01.jpg" alt="">
+                    </div>
+                    <span class="onOff">
+    
+                    </span>
+                </div>
+                <div class="item">
+                    <div class="userS">
+                        <img src="images/index/indexChatUI02.jpg" alt="">
+                    </div>
+                    <span class="onOff">
+    
+                    </span>
+                </div>
+                <div class="item">
+                    <div class="userS">
+                        <img src="images/index/indexChatUI03.jpg" alt="">
+                    </div>
+                    <span class="onOff">
+    
+                    </span>
+                </div>
+                <div class="item">
+                    <div class="userS">
+                        <img src="images/index/indexChatUI04.jpg" alt="">
+                    </div>
+                    <span class="onOff">
+    
+                    </span>
+                </div>
+                <div class="item">
+                    <div class="userS">
+                        <img src="images/index/indexChatUI05.jpg" alt="">
+                    </div>
+                    <span class="onOff">
+    
+                    </span>
+                </div>
+                <div class="item">
+                    <div class="userS">
+                        <img src="images/index/indexChatUI06.jpg" alt="">
+                    </div>
+                    <span class="onOff">
+    
+                    </span>
+                </div>
+                <div class="item">
+                    <div class="userS">
+                        <img src="images/index/indexChatUI07.jpg" alt="">
+                    </div>
+                    <span class="onOff">
+    
+                    </span>
+                </div>
+                <div class="item">
+                    <div class="userS">
+                        <img src="images/index/indexChatUI08.jpg" alt="">
+                    </div>
+                    <span class="onOff">
+    
+                    </span>
+                </div>
+                <div class="item">
+                    <div class="userS">
+                        <img src="images/index/indexChatUI09.jpg" alt="">
+                    </div>
+                    <span class="onOff">
+    
+                    </span>
+                </div>
+                <div class="item">
+                    <div class="userS">
+                        <img src="images/index/indexChatUI10.jpg" alt="">
+                    </div>
+                    <span class="onOff">
+    
+                    </span>
+                </div>
+                <div class="item">
+                    <div class="userS">
+                        <img src="images/index/indexChatUI11.jpg" alt="">
+                    </div>
+                    <span class="onOff">
+    
+                    </span>
+                </div>
+                <div class="item">
+                    <div class="userS">
+                        <img src="images/index/indexChatUI12.jpg" alt="">
+                    </div>
+                    <span class="onOff">
+    
+                    </span>
+                </div>
+            </div>
+            <div class="userHide">
+                <div class="header">
+                    <div class="left">
+                        <div class="user">
+                            <img src="images/index/indexChatUI01.jpg" alt="">
+                        </div>
+                        
+                    </div>
+                    <div class="text">
+                        <strong>John </strong>Doe
+                    </div>
+                    <div class="right">
+                        <i class="fas fa-times-circle userChatClose"></i>
+                    </div>
+                </div>
+                <div class="message">
+
+                </div>
+                <div class="addMessage">
+                    <input type="text" class="newMessage" placeholder="Type a message.." oninput="Load()"> 
+                </div>
+            </div>
+        </div>
+        <div class="head">
+            <strong>Activity</strong>UI
+            <i class="fas fa-globe-asia"></i>
+        </div>
+        <div class="just">
+            <p>just now</p>
+            <i class="fas fa-thumbs-up"></i>
+            <span>Upgraded to Pro plan</span>
+        </div>
+        <div class="just">
+            <p>2 hours ago</p>
+            <i class="fas fa-coins"></i>
+            <span>You had a new sale!</span>
+        </div>
+        <div class="just">
+            <p>3 hours ago</p>
+            <i class="fas fa-plus"></i>
+            <span>
+                <a href="">John Doe</a>would like to </span>
+        </div>
+        <div class="become">
+            <p>become friends!</p>
+            <button class="accept">
+                <i class="fas fa-check"></i>
+                Accept
+            </button>
+            <button class="ignore">
+                <i class="fas fa-times"></i>
+                Ignore
+            </button>
+        </div>
+        <div class="days">
+            <p>2 days ago</p>
+            <span>Running low on space</span>
+            <br>
+            <span>18GB in use 2GB left</span>
+            <br>
+            <button class="upgrade">
+                <i class="fas fa-arrow-up"></i>
+                Upgrade Plan
+            </button>
+        </div>
+        <div class="head">
+            <strong>Messages</strong>UI (5)
+            <i class="fas fa-envelope"></i>
+        </div>
+        <div class="messages">
+            <div class="messagesItem">
+                <div>
+                    <span>Debra Stanley</span>
+                    <span>just now</span>
+                </div>
+                <a href="">New Follower</a>
+            </div>
+            <div class="messagesItem">
+                <div>
+                    <span>Sarah Cole</span>
+                    <span>2 min ago</span>
+                </div>
+                <a href="">Your subscription was updated</a>
+            </div>
+            <div class="messagesItem">
+                <div>
+                    <span>Bryan Porter</span>
+                    <span>10 min ago</span>
+                </div>
+                <a href="">A great opportunity</a>
+            </div>
+            <div class="messagesItem">
+                <div>
+                    <span>Jose Duncan</span>
+                    <span>30 min ago</span>
+                </div>
+                <a href="">Account Activation</a>
+            </div>
+            <div class="messagesItem">
+                <div>
+                    <span>Henry Ellis</span>
+                    <span>40 min ago</span>
+                </div>
+                <a href="">You reached 10.000 Followers!</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/upload.js"></script>
+    <script src="js/click.js"></script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+        
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('myImg');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

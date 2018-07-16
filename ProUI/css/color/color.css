@@ -1,0 +1,504 @@
+@media screen and (min-width: 600px) {
+  body {
+    display: grid;
+    grid-template-columns: repeat(34, 1fr);
+    height: 5000px; }
+  #sidebar {
+    grid-column: 1/6;
+    width: 200px;
+    background-color: #583a63;
+    display: inline-block;
+    position: absolute;
+    z-index: 1; }
+    #sidebar span {
+      color: white; }
+    #sidebar i {
+      color: white;
+      cursor: pointer;
+      opacity: 0.4;
+      font-size: 14px;
+      margin-right: 6px;
+      margin-top: 5px; }
+    #sidebar ul {
+      color: white;
+      padding: 0;
+      margin: 0;
+      list-style: none; }
+      #sidebar ul > li {
+        cursor: pointer;
+        position: relative;
+        padding: 10px 5px 12px 14px;
+        font-size: 13px; }
+        #sidebar ul > li i:nth-of-type(2) {
+          float: right; }
+        #sidebar ul > li:hover {
+          background-color: #4f3459; }
+          #sidebar ul > li:hover i {
+            opacity: 1; }
+      #sidebar ul > ul {
+        display: none;
+        background-color: #412b49; }
+    #sidebar .select {
+      background-color: #4f3459; }
+      #sidebar .select .left {
+        transition: all .2s linear;
+        transform: rotate(-90deg);
+        opacity: 1; }
+    #sidebar .left {
+      transition: all .2s linear;
+      transform: rotate(0deg);
+      opacity: 0.4; }
+    #sidebar .header {
+      padding: 10px 5px 12px 14px; }
+      #sidebar .header span {
+        font-size: 12px;
+        opacity: 0.6; }
+      #sidebar .header .widgetItem {
+        display: inline-block;
+        float: right; }
+        #sidebar .header .widgetItem i:hover {
+          opacity: 1; }
+    #sidebar .logo {
+      height: 50px;
+      box-sizing: border-box;
+      background-color: #4a3153;
+      padding: 10px 5px 12px 14px;
+      cursor: pointer; }
+      #sidebar .logo img {
+        height: 15px; }
+      #sidebar .logo > span {
+        margin-left: 3px;
+        font-size: 20px;
+        font-weight: bold; }
+      #sidebar .logo:hover {
+        background-color: #a781b5; }
+    #sidebar .user {
+      padding: 10px 5px 12px 14px;
+      position: relative; }
+      #sidebar .user .userPhoto {
+        border-radius: 100%;
+        display: inline-block;
+        border: 2px solid white;
+        overflow: hidden;
+        cursor: pointer; }
+      #sidebar .user .userName {
+        display: inline-block;
+        position: relative;
+        top: -15px;
+        margin-left: 7px;
+        line-height: 1.5; }
+        #sidebar .user .userName span {
+          font-size: 18px; }
+        #sidebar .user .userName i {
+          cursor: pointer;
+          color: white;
+          font-size: 14px;
+          margin: 0 3px;
+          opacity: 0.4; }
+          #sidebar .user .userName i:hover {
+            opacity: 1; }
+    #sidebar .colorSidebar {
+      background-color: #4a3153;
+      padding: 10px 5px 12px 14px;
+      transition: all .5 ease;
+      opacity: 0.5; }
+      #sidebar .colorSidebar:hover {
+        opacity: 1; }
+      #sidebar .colorSidebar > div {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        cursor: pointer; }
+        #sidebar .colorSidebar > div:nth-child(1) {
+          border: 2px solid white;
+          background-color: #2b2b2b; }
+        #sidebar .colorSidebar > div:nth-child(2) {
+          border: 2px solid #af64cc;
+          background-color: #583a63; }
+        #sidebar .colorSidebar > div:nth-child(3) {
+          border: 2px solid #46b7bf;
+          background-color: #583a63; }
+        #sidebar .colorSidebar > div:nth-child(4) {
+          border: 2px solid #e67e22;
+          background-color: #4a392b; }
+        #sidebar .colorSidebar > div:nth-child(5) {
+          border: 2px solid #1ec1b8;
+          background-color: #32323a; }
+        #sidebar .colorSidebar > div:nth-child(6) {
+          border: 2px solid #26ab5e;
+          background-color: #344a3d; }
+        #sidebar .colorSidebar > div:nth-child(7) {
+          border: 2px solid #c43e67;
+          background-color: #352b4e; }
+        #sidebar .colorSidebar > div:nth-child(8) {
+          border: 2px solid #df4f41;
+          background-color: #4a2e2b; }
+        #sidebar .colorSidebar > div:nth-child(9) {
+          border: 2px solid #ff6b6b;
+          background-color: #3c3e4f; }
+        #sidebar .colorSidebar > div:nth-child(10) {
+          border: 2px solid #e38e7b;
+          background-color: #043e50; }
+        #sidebar .colorSidebar > div:nth-child(11) {
+          border: 2px solid #0eab86;
+          background-color: #3b322c; }
+        #sidebar .colorSidebar > div:nth-child(12) {
+          border: 2px solid #4ca5a9;
+          background-color: #4f243e; }
+        #sidebar .colorSidebar > div:nth-child(13) {
+          border: 2px solid #27857d;
+          background-color: #07313a; }
+        #sidebar .colorSidebar > div:nth-child(14) {
+          border: 2px solid #148e81;
+          background-color: #352738; }
+    #sidebar .proUIitem ul li:nth-child(4) i:nth-of-type(2) {
+      float: right; }
+    #sidebar .developItem .itemDevelopMain {
+      background-color: #2d1e33; }
+    #sidebar .developItem > ul > li:hover {
+      background-color: #392540; }
+    #sidebar .developItem .select2 {
+      background-color: #392540; }
+  #main {
+    grid-column: 1/35;
+    display: block;
+    margin-left: 200px;
+    background-color: red;
+    z-index: 2; }
+    #main .nav {
+      height: 50px; }
+      #main .nav div {
+        display: inline-block; }
+      #main .nav .left .showHideSidebar {
+        height: 50px;
+        width: 50px;
+        float: left;
+        box-sizing: border-box;
+        padding: 5px; }
+        #main .nav .left .showHideSidebar > i {
+          padding: 12px; }
+        #main .nav .left .showHideSidebar:hover {
+          background-color: #a781b5; }
+          #main .nav .left .showHideSidebar:hover i {
+            color: white; }
+      #main .nav .left .setting {
+        height: 50px;
+        width: 50px;
+        float: left;
+        box-sizing: border-box;
+        padding: 5px; }
+        #main .nav .left .setting > i {
+          padding: 12px; }
+        #main .nav .left .setting:hover {
+          background-color: #a781b5; }
+          #main .nav .left .setting:hover i {
+            color: white; }
+      #main .nav .left .input {
+        height: 50px;
+        width: 50px;
+        float: left;
+        box-sizing: border-box;
+        padding: 10px; }
+        #main .nav .left .input input {
+          outline: none;
+          width: 100px; }
+      #main .nav .right {
+        float: left;
+        margin-left: auto; }
+        #main .nav .right .showHideChatUI {
+          height: 50px;
+          width: 50px;
+          float: left;
+          box-sizing: border-box;
+          padding: 5px;
+          position: relative; }
+          #main .nav .right .showHideChatUI > i {
+            padding: 12px; }
+          #main .nav .right .showHideChatUI > div {
+            height: 20px;
+            width: 14px;
+            text-align: center;
+            position: absolute;
+            top: 2px;
+            right: 4px;
+            background-color: #a781b5;
+            color: white; }
+          #main .nav .right .showHideChatUI:hover {
+            background-color: #a781b5; }
+            #main .nav .right .showHideChatUI:hover i {
+              color: white; }
+        #main .nav .right .userAcount {
+          position: relative;
+          cursor: pointer; }
+          #main .nav .right .userAcount .user {
+            margin: 6px;
+            height: 38px;
+            width: 38px;
+            float: left;
+            overflow: hidden;
+            border-radius: 100%; }
+            #main .nav .right .userAcount .user img {
+              width: 100%;
+              height: 100%; }
+          #main .nav .right .userAcount i {
+            margin-top: 18px;
+            margin-right: 5px;
+            margin-left: -3px;
+            font-size: 11px; }
+          #main .nav .right .userAcount .userItem {
+            width: 200px;
+            background-color: white;
+            position: absolute;
+            top: 50px;
+            right: 0px; }
+            #main .nav .right .userAcount .userItem .account {
+              width: 100%; }
+              #main .nav .right .userAcount .userItem .account p {
+                padding: 10px 0px;
+                margin: 0;
+                text-align: center;
+                border-bottom: 1px solid #583a63;
+                font-size: 14px; }
+              #main .nav .right .userAcount .userItem .account ul {
+                margin: 0;
+                list-style: none;
+                padding: 0;
+                border-bottom: 1px solid #583a63; }
+                #main .nav .right .userAcount .userItem .account ul li {
+                  padding: 3px 10px; }
+                  #main .nav .right .userAcount .userItem .account ul li a {
+                    font-size: 14px;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                    padding: 5px 8px;
+                    color: #583a63;
+                    text-decoration: none;
+                    display: block; }
+                    #main .nav .right .userAcount .userItem .account ul li a span {
+                      padding: 0px 6px;
+                      border-radius: 41%;
+                      background: #583a63;
+                      color: white;
+                      font-weight: bold;
+                      font-size: 12px;
+                      float: right;
+                      opacity: 0.5; }
+                    #main .nav .right .userAcount .userItem .account ul li a i {
+                      margin: 3px 0 0 3px;
+                      opacity: 0.5;
+                      font-size: 12px;
+                      float: right; }
+                    #main .nav .right .userAcount .userItem .account ul li a:hover {
+                      background-color: #ffa7b6;
+                      color: white; }
+                      #main .nav .right .userAcount .userItem .account ul li a:hover i {
+                        opacity: 1; }
+                      #main .nav .right .userAcount .userItem .account ul li a:hover span {
+                        opacity: 0.8; }
+            #main .nav .right .userAcount .userItem .activity {
+              width: 100%; }
+              #main .nav .right .userAcount .userItem .activity p {
+                padding: 10px 0px;
+                margin: 0;
+                text-align: center;
+                border-bottom: 1px solid #583a63;
+                font-size: 14px; }
+              #main .nav .right .userAcount .userItem .activity ul {
+                margin: 0;
+                list-style: none;
+                padding: 0;
+                border-bottom: 1px solid #583a63; }
+                #main .nav .right .userAcount .userItem .activity ul li {
+                  padding: 8px 10px;
+                  line-height: 1;
+                  margin: 2px 0px 2px 8px; }
+                  #main .nav .right .userAcount .userItem .activity ul li i {
+                    margin: 0;
+                    opacity: 0.2;
+                    font-size: 13px; }
+                  #main .nav .right .userAcount .userItem .activity ul li:nth-child(1) {
+                    border-left: 2px solid green;
+                    background-color: #e6ffe6; }
+                    #main .nav .right .userAcount .userItem .activity ul li:nth-child(1) span {
+                      color: green; }
+                      #main .nav .right .userAcount .userItem .activity ul li:nth-child(1) span:nth-child(1) {
+                        font-size: 10px; }
+                      #main .nav .right .userAcount .userItem .activity ul li:nth-child(1) span:nth-child(3) {
+                        font-size: 13px; }
+                  #main .nav .right .userAcount .userItem .activity ul li:nth-child(2) {
+                    border-left: 2px solid blue;
+                    background-color: #e6e6ff; }
+                    #main .nav .right .userAcount .userItem .activity ul li:nth-child(2) span {
+                      color: blue; }
+                      #main .nav .right .userAcount .userItem .activity ul li:nth-child(2) span:nth-child(1) {
+                        font-size: 10px; }
+                      #main .nav .right .userAcount .userItem .activity ul li:nth-child(2) span:nth-child(3) {
+                        font-size: 13px; }
+                    #main .nav .right .userAcount .userItem .activity ul li:nth-child(2) i {
+                      opacity: 0.2;
+                      font-size: 13px; }
+                  #main .nav .right .userAcount .userItem .activity ul li:nth-child(3) {
+                    border-left: 2px solid orange;
+                    background-color: #fff6e6; }
+                    #main .nav .right .userAcount .userItem .activity ul li:nth-child(3) span {
+                      color: orange; }
+                      #main .nav .right .userAcount .userItem .activity ul li:nth-child(3) span:nth-child(1) {
+                        font-size: 10px; }
+                      #main .nav .right .userAcount .userItem .activity ul li:nth-child(3) span:nth-child(3) {
+                        font-size: 13px;
+                        margin-bottom: 5px; }
+                      #main .nav .right .userAcount .userItem .activity ul li:nth-child(3) span:nth-child(5) {
+                        font-size: 13px; }
+                    #main .nav .right .userAcount .userItem .activity ul li:nth-child(3) i {
+                      opacity: 0.2;
+                      font-size: 13px; }
+                  #main .nav .right .userAcount .userItem .activity ul li:nth-child(4) {
+                    border-left: 2px solid red;
+                    background-color: #ffe6e6; }
+                    #main .nav .right .userAcount .userItem .activity ul li:nth-child(4) span {
+                      color: red; }
+                      #main .nav .right .userAcount .userItem .activity ul li:nth-child(4) span:nth-child(1) {
+                        font-size: 10px; }
+                    #main .nav .right .userAcount .userItem .activity ul li:nth-child(4) a {
+                      text-decoration: none;
+                      color: red;
+                      font-weight: bold; }
+          #main .nav .right .userAcount:hover {
+            background-color: #a781b5; }
+  #chatUI {
+    grid-column: 30/35;
+    position: absolute;
+    right: 0;
+    width: 200px;
+    color: white;
+    z-index: 1;
+    background-color: #583a63; }
+    #chatUI .head {
+      padding: 10px 5px 12px 14px;
+      background-color: #4a3153;
+      height: 50px;
+      font-size: 20px;
+      cursor: pointer; }
+      #chatUI .head i {
+        float: right;
+        font-size: 14px;
+        margin-top: 7px;
+        opacity: 0.5;
+        margin-right: 8px; }
+      #chatUI .head:hover {
+        background-color: #a781b5; }
+    #chatUI .users {
+      padding: 10px 5px 12px 14px;
+      position: relative; }
+      #chatUI .users div {
+        display: inline-block; }
+      #chatUI .users .item {
+        position: relative; }
+        #chatUI .users .item .user {
+          cursor: pointer;
+          height: 52px;
+          width: 52px;
+          margin: 1px;
+          border-radius: 100%;
+          overflow: hidden;
+          border: 2px solid wheat; }
+          #chatUI .users .item .user img {
+            width: 100%; }
+          #chatUI .users .item .user:hover {
+            border: 3zpx solid white; }
+        #chatUI .users .item span {
+          width: 7px;
+          height: 7px;
+          background: green;
+          border-radius: 100%;
+          position: absolute;
+          right: 0;
+          top: 0; }
+    #chatUI .just {
+      padding: 10px 5px 12px 14px;
+      color: white; }
+      #chatUI .just p {
+        font-size: 11px;
+        margin: 0;
+        opacity: 0.8; }
+      #chatUI .just i {
+        font-size: 14px; }
+      #chatUI .just span {
+        font-size: 14px; }
+        #chatUI .just span a {
+          margin-right: 3px;
+          font-weight: bold;
+          color: #ffa7b6; }
+      #chatUI .just:nth-child(4) {
+        border-right: 2px solid green; }
+      #chatUI .just:nth-child(5) {
+        border-right: 2px solid red; }
+      #chatUI .just:nth-child(6) {
+        border-right: 2px solid aqua; }
+    #chatUI .become {
+      padding: 2px 12px;
+      color: white;
+      border-right: 2px solid greenyellow; }
+      #chatUI .become p {
+        font-size: 11px;
+        opacity: 0.8;
+        margin: 0; }
+      #chatUI .become i {
+        font-size: 14px; }
+      #chatUI .become button {
+        border: 0;
+        border-radius: 4px;
+        outline: none;
+        margin: 4px;
+        width: 75px;
+        height: 23px;
+        font-size: 14px;
+        cursor: pointer; }
+        #chatUI .become button:nth-child(2) {
+          background-color: #a781b5;
+          color: white; }
+        #chatUI .become button:nth-child(2):hover {
+          background-color: #9161a2; }
+        #chatUI .become button:nth-child(3) {
+          color: black; }
+    #chatUI .days {
+      color: white;
+      padding: 10px 5px 12px 14px;
+      line-height: 1.3;
+      margin-top: 7px;
+      border-right: 2px solid goldenrod; }
+      #chatUI .days p {
+        font-size: 11px;
+        opacity: 0.8;
+        margin: 0; }
+      #chatUI .days span {
+        font-size: 14px; }
+      #chatUI .days button {
+        border: 0;
+        border-radius: 4px;
+        outline: none;
+        width: 121px;
+        height: 27px;
+        font-size: 14px;
+        cursor: pointer;
+        color: white;
+        background-color: #a781b5; }
+        #chatUI .days button:hover {
+          background-color: #9161a2; }
+    #chatUI .messages .messagesItem {
+      padding: 10px 5px 12px 14px;
+      line-height: 1.2; }
+      #chatUI .messages .messagesItem > div span {
+        color: white; }
+        #chatUI .messages .messagesItem > div span:nth-child(1) {
+          font-size: 12px; }
+        #chatUI .messages .messagesItem > div span:nth-child(2) {
+          opacity: 0.8;
+          font-size: 9px;
+          margin-top: 5px;
+          float: right; }
+      #chatUI .messages .messagesItem a {
+        font-size: 13px;
+        font-weight: bold;
+        color: #ffa7b6; } }
